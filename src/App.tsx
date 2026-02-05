@@ -8,6 +8,7 @@ import Teams from "./components/Teams";
 import ContactUs from "./components/ContactUs";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
+import AboutUs from "./components/AboutUs";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<string>(
@@ -47,6 +48,9 @@ const App: React.FC = () => {
       <Navbar theme={theme} setTheme={setTheme} />
       <section id="hero">
         <Hero />
+      </section>
+      <section id="about-us">
+        <AboutUs />
       </section>
       {/* <TrustedBy /> */}
 

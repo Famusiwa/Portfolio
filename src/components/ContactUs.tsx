@@ -4,16 +4,34 @@ import toast from "react-hot-toast";
 import { motion } from "motion/react";
 import { useState } from "react";
 import Button from "./custom/Button";
+import { useFormValidation, type FormValues } from "../lib/formValidation";
+import { useRef } from "react";
+import Input from "./custom/Input";
 
 const ContactUs: React.FC = () => {
+  const refs = {
+    name: useRef<HTMLInputElement>(null),
+    email: useRef<HTMLInputElement>(null),
+    message: useRef<HTMLTextAreaElement>(null),
+  };
+
+  const initialForm: FormValues = {
+    name: "",
+    email: "",
+    message: "",
+  };
+  const [form, setForm] = useState<FormValues>(initialForm);
   const [loading, setLoading] = useState(false);
+  const { validate } = useFormValidation(refs);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!validate(form)) return;
     if (loading) return;
     setLoading(true);
     const formData = new FormData(e.currentTarget);
     formData.append("access_key", "5407eda7-a3b9-4ad2-afc7-32bacc917ad1");
+    formData.append("subject", "Contact Form Submission");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -23,6 +41,7 @@ const ContactUs: React.FC = () => {
       setLoading(false);
       const data = await response.json();
       if (data.success) {
+        setForm(initialForm);
         toast.success("Thank you for submission!");
         // e.currentTarget.reset();
         if (e.currentTarget && typeof e.currentTarget.reset === "function") {
@@ -67,15 +86,21 @@ const ContactUs: React.FC = () => {
         className="grid sm:grid-cols-2 gap-3 sm:gap-5 w-full max-w-2xl"
       >
         <div>
-          <p className="mb-2 text-sm font-medium">Your name</p>
+          <p className="mb-2 text-sm font-medium">Name</p>
           <div className="flex pl-3 rounded-lg border border-gray-300 dark:border-gray-600">
             <img src={assets.person_icon} alt="person_icon" />
-            <input
-              type="text"
+            <Input
               name="name"
+              ref={refs.name}
+              value={form.name}
+              onChange={(e) =>
+                setForm((prev) => ({
+                  ...prev,
+                  name: e.target.value,
+                }))
+              }
               placeholder="Enter your name"
               className="p-3 text-sm outline-none"
-              required
             />
           </div>
         </div>
@@ -83,12 +108,18 @@ const ContactUs: React.FC = () => {
           <p className="mb-2 text-sm font-medium">Email Id</p>
           <div className="flex pl-3 rounded-lg border border-gray-300 dark:border-gray-600">
             <img src={assets.email_icon} alt="email_icon" />
-            <input
-              type="text"
+            <Input
               name="email"
+              ref={refs.email}
+              value={form.email}
+              onChange={(e) =>
+                setForm((prev) => ({
+                  ...prev,
+                  email: e.target.value,
+                }))
+              }
               placeholder="Enter your email"
               className=" p-3 text-sm outline-none"
-              required
             />
           </div>
         </div>
@@ -96,10 +127,17 @@ const ContactUs: React.FC = () => {
           <p className="mb-2 text-sm font-medium">Message</p>
           <textarea
             name="message"
-            rows={8}
+            rows={5}
+            ref={refs.message}
+            value={form.message}
+            onChange={(e) =>
+              setForm((prev) => ({
+                ...prev,
+                message: e.target.value,
+              }))
+            }
             className="w-full p-3 text-sm outline-none rounded-lg border border-gray-300 dark:border-gray-600"
             placeholder="Enter your message"
-            required
           />
         </div>
         <Button

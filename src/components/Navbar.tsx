@@ -12,6 +12,7 @@ type NavProp = {
 const Navbar: React.FC<NavProp> = ({ theme }) => {
   const navLinks = [
     { label: "Home", to: "#hero" },
+    { label: "About Us", to: "#about-us" },
     { label: "Services", to: "#services" },
     { label: "Our Work", to: "#our-work" },
     { label: "Contact Us", to: "#contact-us" },
