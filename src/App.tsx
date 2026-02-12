@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { useEffect, useRef, useState } from "react";
-// import TrustedBy from "./components/TrustedBy";
+import TrustedBy from "./components/TrustedBy";
 import Services from "./components/Services";
 import OurWork from "./components/OurWork";
 import Teams from "./components/Teams";
@@ -49,10 +49,10 @@ const App: React.FC = () => {
       <section id="hero">
         <Hero />
       </section>
+      <TrustedBy />
       <section id="about-us">
         <AboutUs />
       </section>
-      {/* <TrustedBy /> */}
 
       <section id="services">
         <Services />
