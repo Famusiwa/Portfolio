@@ -32,6 +32,7 @@ const Hero: React.FC = () => {
         </span>{" "}
         impact.
       </motion.h1>
+      {/* Engineering the interface between creative vision and user impact. */}
 
       <motion.p
         initial={{ opacity: 0, y: 30 }}

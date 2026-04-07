@@ -4,7 +4,7 @@ import group_profile from './group_profile.png'
 import bgImage1 from './bgImage1.png'
 import bgImage2 from './bgImage2.png'
 import hero_img from './hero_img.png'
-import ads_icon from './ads_icon.svg'
+import promo_icon from './promo_icon.svg'
 import content_icon from './content_icon.svg'
 import marketing_icon from './marketing_icon.svg'
 import social_icon from './social_icon.svg'
@@ -17,7 +17,7 @@ import fortune_real_estate from './fortune_real_estate.png'
 import email_icon from './email_icon.svg'
 import person_icon from './person_icon.svg'
 import facebook_icon from './facebook_icon.svg'
-import twitter_icon from './twitter_icon.svg'
+import twitter1_icon from './twitter1_icon.svg'
 import instagram_icon from './instagram_icon.svg'
 import linkedin_icon from './linkedin_icon.svg'
 import logo_dark from './logo_dark.svg'
@@ -55,7 +55,7 @@ const assets = {
   bgImage1,
   bgImage2,
   hero_img,
-  ads_icon,
+  promo_icon,
   content_icon,
   marketing_icon,
   social_icon,
@@ -70,7 +70,7 @@ const assets = {
   email_icon,
   person_icon,
   facebook_icon,
-  twitter_icon,
+  twitter1_icon,
   instagram_icon,
   linkedin_icon,
   graphics_icon,

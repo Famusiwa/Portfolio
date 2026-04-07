@@ -1,10 +1,10 @@
 import Title from "./Title";
-import assets from "../assets/assets";
+import assets from "@/assets/assets";
 import toast from "react-hot-toast";
 import { motion } from "motion/react";
 import { useState } from "react";
 import Button from "./custom/Button";
-import { useFormValidation, type FormValues } from "../lib/formValidation";
+import { useFormValidation, type FormValues } from "@/lib/formValidation";
 import { useRef } from "react";
 import Input from "./custom/Input";
 
