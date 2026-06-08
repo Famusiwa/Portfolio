@@ -15,6 +15,7 @@ import work_fitness_app from './work_fitness_app.png'
 import work_dashboard_management from './work_dashboard_management.png'
 import fortune_real_estate from './fortune_real_estate.png'
 import email_icon from './email_icon.svg'
+import ads_icon from './ads_icon.svg'
 import person_icon from './person_icon.svg'
 import facebook_icon from './facebook_icon.svg'
 import twitter1_icon from './twitter1_icon.svg'
@@ -35,6 +36,7 @@ import bootstrap from './bootstrap.png'
 import nextjs from './nextjs.svg'
 import Nodejs from './Nodejs.png'
 import Sqllogo from './Sqllogo.png'
+import revenuePayment from './revenuePayment.png'
 
 
 export const company_logos = [
@@ -66,6 +68,7 @@ const assets = {
   work_dashboard_management,
   fortune_real_estate,
   githubfinder,
+  revenuePayment,
   hotelMgt,
   email_icon,
   person_icon,
@@ -77,7 +80,8 @@ const assets = {
   logo_dark,
   menu_icon_dark,
   sun_icon,
-  moon_icon
+  moon_icon,
+  ads_icon
 }
 
 export default assets

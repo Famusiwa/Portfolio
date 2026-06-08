@@ -19,7 +19,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       whileHover={{ y: -8 }}
-      className="bg-blue-800 border border-blue-400 rounded-xl p-6 backdrop-blur-md shadow-lg"
+      className="bg-indigo-700 border border-blue-400 rounded-xl p-6 backdrop-blur-md shadow-lg"
     >
       <div className="flex items-center mb-4">
         <motion.div

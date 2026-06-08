@@ -143,7 +143,7 @@ const ContactUs: React.FC = () => {
         <Button
           type="submit"
           loading={loading}
-          className="bg-primary w-max min-w-[130px] text-white px-4 py-2 rounded-full hover:scale-103"
+          className="bg-indigo-700 w-max min-w-[130px] text-white px-4 py-2 rounded-full hover:scale-103"
         >
           Submit <img src={assets.arrow_icon} alt="submit" width={14} />
         </Button>

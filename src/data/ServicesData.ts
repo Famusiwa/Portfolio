@@ -8,10 +8,13 @@ export interface Service {
 }
 
 export interface Work {
+    id: number
     title: string
     description: string,
     image: string
     link:string
+    tech: string[]
+    github:string
 }
 
 export const serviceData: Service[]= [
@@ -42,22 +45,33 @@ export const serviceData: Service[]= [
 export const workData: Work[]= [
 
         {
+            id: 1,
             title: "GitHub Finder",
             description: "Help to find different user on github with their repo",
             image: assets.githubfinder,
-            link: "https://git-hub-finder-beta-gold.vercel.app/"
+            link: "https://git-hub-finder-beta-gold.vercel.app/",
+            tech: ["React", "Tailwind", "TypeScript"],
+            github: "#",
         },
         {
-            title: "Hotel Management",
-            description: "This application is build to manage hotel reservation for user",
-            image: assets.hotelMgt,
-            link: ""
-        },
-        {
-            title: "Fortune Real Estate",
+            id: 2,
+            title: "Fortune Housing",
             description: "We turn your vision of home into a reality, delivering results that move you.",
             image: assets.fortune_real_estate,
-            link: ""
+            link: "https://fortune-housing.vercel.app/",
+             tech: ["React", "Tailwind", "Firebase", "TypeScript"],
+            github: "#",
         },
+        {
+            id: 3,
+            title: "Revenue Payment",
+            description: "This application is build to handle revenue payment of staff accross state",
+            image: assets.revenuePayment,
+            link: "https://payment.deltabir.com/",
+            tech: ["React","TypeScript", "Tailwind", "ASP.Net(C#)"],
+            github: "#",
+        },
+
+        
         
     ]

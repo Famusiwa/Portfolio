@@ -1,14 +1,15 @@
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import { useEffect, useRef, useState } from "react";
-import TrustedBy from "./components/TrustedBy";
-import Services from "./components/Services";
+// import Services from "./components/Services";
 import OurWork from "./components/OurWork";
-import Teams from "./components/Teams";
+// import Teams from "./components/Teams";
 import ContactUs from "./components/ContactUs";
 import { Toaster } from "react-hot-toast";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
+import TechToolKits from "./components/TechToolkits";
+import ChatUsWhatsApp from "./components/ChatUsWhatsApp";
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<string>(
@@ -49,22 +50,23 @@ const App: React.FC = () => {
       <section id="hero">
         <Hero />
       </section>
-      <TrustedBy />
+      <TechToolKits />
       <section id="about-us">
         <AboutUs />
       </section>
 
-      <section id="services">
+      {/* <section id="services">
         <Services />
-      </section>
+      </section> */}
       <section id="our-work">
         <OurWork />
       </section>
-      <Teams />
+      {/* <Teams /> */}
       <section id="contact-us">
         <ContactUs />
       </section>
       <Footer />
+      <ChatUsWhatsApp />
       {/* <div ref={outlineRef} className="fixed top-0 left-0 h-10 w-10 rounded-full border border-primary
        pointer-events-none z-9999 transition-transform duration-100 ease-out">
       </div>

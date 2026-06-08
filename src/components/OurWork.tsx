@@ -15,13 +15,13 @@ const OurWork: React.FC = () => {
     >
       <div className="relative text-center">
         <Title
-          title="Our latest work?"
+          title="Featured Projects"
           desc="From strategy to execution, we craft digital solutions that move your business forward."
         />
       </div>
-      <div className="grid sm:grid-col-2 lg:grid-cols-3 w-full max-w-5xl gap-6">
-        {workData.map((work, index) => (
-          <OurWorkCard key={index} work={work} index={index} />
+      <div className="grid sm:grid-col-2 lg:grid-cols-3 w-full max-w-7xl gap-6">
+        {workData.map((work, id) => (
+          <OurWorkCard key={id} work={work} id={id} />
         ))}
       </div>
     </motion.div>

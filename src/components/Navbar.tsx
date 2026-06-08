@@ -2,7 +2,7 @@ import assets from "../assets/assets";
 import { useState } from "react";
 import { motion } from "motion/react";
 
-// import ThemeToggler from './ThemeToggler';
+// import ThemeToggler from "./ThemeToggler";
 
 type NavProp = {
   theme: string;
@@ -13,7 +13,7 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
   const navLinks = [
     { label: "Home", to: "#hero" },
     { label: "About Us", to: "#about-us" },
-    { label: "Services", to: "#services" },
+    // { label: "Services", to: "#services" },
     { label: "Our Work", to: "#our-work" },
     { label: "Contact Us", to: "#contact-us" },
   ];
@@ -24,7 +24,8 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className=" dark flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4
-    sticky top-0 z-20 backdrop-blur-xl font-medium bg-white/50 dark:bg-gray-900/70 "
+    sticky top-0 z-20 backdrop-blur-xl font-medium bg-linear-to-l
+    from-indigo-50 via-purple-100 to-pink-50; dark:bg-gray-900/70 "
     >
       <img
         src={theme === "dark" ? assets.logo_dark : assets.dalight}
@@ -42,10 +43,10 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
         ))}
       </div>
       <div
-        className={`text-gray-700 md:hidden lg:hidden dark:test-white sm:text-sm 
+        className={`text-white md:hidden lg:hidden dark:test-white sm:text-sm 
         ${!sidebarOpen ? "max-sm: w-0 overflow-hidden" : "max-sm:w-60 max-sm:pl-10"}
         max-sm: fixed top-0 bottom-0 right-0 max-sm: min-h-screen max-sm:h-full 
-        max-sm:flex-col max-sm:bg-blue-600 max-sm:test-white max-sm:pt-20 flex sm:item-center gap-5 transition-all`}
+        max-sm:flex-col max-sm:bg-indigo-700 max-sm:test-white max-sm:pt-20 flex sm:item-center gap-5 transition-all`}
       >
         <img
           src={assets.close_icon}
@@ -61,7 +62,7 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
         ))}
       </div>
       <div className="flex items-center gap-2 sm:gap-4">
-        {/* <ThemeToggler  theme={theme} setTheme={setTheme} /> */}
+        {/* <ThemeToggler theme={theme} setTheme={setTheme} /> */}
         <img
           src={theme === "dark" ? assets.menu_icon_dark : assets.menu_icon}
           alt=""
@@ -70,8 +71,9 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
         />
         <a
           href="#contact-us"
-          className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white
-        px-6 py-2 rounded-full cursor-pointer hover: scale-103 transition-all "
+          //   className="text-sm max-sm:hidden flex items-center gap-2 bg-primary text-white
+          // px-6 py-2 rounded-full cursor-pointer hover: scale-103 hover:translate-x-1"
+          className="bg-indigo-700 w-max min-w-[130px] flex items-center gap-3 text-white px-4 py-2 rounded-full hover:scale-103"
         >
           Connect <img src={assets.arrow_icon} width={14} alt="arrow" />
         </a>
