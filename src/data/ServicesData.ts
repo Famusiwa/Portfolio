@@ -67,7 +67,7 @@ export const workData: Work[]= [
             title: "Revenue Payment",
             description: "This application is build to handle revenue payment of staff accross state",
             image: assets.revenuePayment,
-            link: "https://payment.deltabir.com/",
+            link: "https://payment.icmaservices.com/",
             tech: ["React","TypeScript", "Tailwind", "ASP.Net(C#)"],
             github: "#",
         },
