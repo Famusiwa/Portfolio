@@ -1,4 +1,4 @@
-import { ArrowUpRight, ExternalLink, Github } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { type Work } from "./data/ServicesData";
 // import { motion } from "motion/react";
 
@@ -10,22 +10,6 @@ interface WorkCardProps {
 
 const OurWorkCard: React.FC<WorkCardProps> = ({ work, id }) => {
   return (
-    // <motion.div
-    //   initial={{ opacity: 0, y: 30 }}
-    //   whileInView={{ opacity: 1, y: 0 }}
-    //   transition={{ duration: 0.5, delay: id * 0.2 }}
-    //   viewport={{ once: true }}
-    //   key={id}
-    //   className="hover:scale-102 duration-500 transition-all cursor-pointer items-center"
-    // >
-    //   <a href={work.link} target="_blank" rel="noopener noreferrer">
-    //     <img src={work.image} alt="image" className="w-full rounded-xl" />
-    //     <div className="text-center">
-    //       <h3 className="mt-3 mb-2 text-lg font-semibold">{work.title}</h3>
-    //       <p className="text-sm opacity-60 ">{work.description}</p>
-    //     </div>
-    //   </a>
-    // </motion.div>
     <div
       key={id}
       className="group relative overflow-hidden rounded-xl border border-white/10 bg-purple-50 backdrop-blur-xl transition-all duration-500 hover:-translate-y-2 hover:border-indigo-500/40"
@@ -90,14 +74,6 @@ const OurWorkCard: React.FC<WorkCardProps> = ({ work, id }) => {
           >
             Live Preview
             <ExternalLink size={16} />
-          </a>
-
-          <a
-            href={work.github}
-            className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-purple-400 px-3 py-1 text-sm font-medium text-white transition hover:border-indigo-500/40 hover:bg-indigo-500"
-          >
-            GitHub
-            <Github size={16} />
           </a>
         </div>
       </div>

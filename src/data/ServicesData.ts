@@ -14,7 +14,7 @@ export interface Work {
     image: string
     link:string
     tech: string[]
-    github:string
+    
 }
 
 export const serviceData: Service[]= [
@@ -51,7 +51,7 @@ export const workData: Work[]= [
             image: assets.githubfinder,
             link: "https://git-hub-finder-beta-gold.vercel.app/",
             tech: ["React", "Tailwind", "TypeScript"],
-            github: "#",
+            
         },
         {
             id: 2,
@@ -59,8 +59,8 @@ export const workData: Work[]= [
             description: "We turn your vision of home into a reality, delivering results that move you.",
             image: assets.fortune_real_estate,
             link: "https://fortune-housing.vercel.app/",
-             tech: ["React", "Tailwind", "Firebase", "TypeScript"],
-            github: "#",
+            tech: ["React", "Tailwind", "Firebase", "TypeScript"],
+          
         },
         {
             id: 3,
@@ -69,7 +69,7 @@ export const workData: Work[]= [
             image: assets.revenuePayment,
             link: "https://payment.icmaservices.com/",
             tech: ["React","TypeScript", "Tailwind", "ASP.Net(C#)"],
-            github: "#",
+           
         },
 
         

@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
   //   </div>
   // );
 
-  const startYear = 2023;
+  const startYear = 2024;
   const years = new Date().getFullYear() - startYear;
 
   <p>{years} years</p>;
@@ -93,26 +93,33 @@ const Hero: React.FC = () => {
           {/* Role Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-indigo-500/20 bg-indigo-500/10 text-indigo-500 text-sm font-medium">
             <Briefcase size={16} />
-            <span>Frontend Engineer</span>
+            <span>Frontend Developer</span>
           </div>
 
           {/* Heading */}
-          <div className="space-y-5">
+          <div className="space-y-2">
             <h3 className="text-3xl md:text-4xl font-extrabold text-black leading-tight tracking-tight">
-              Building digital products with{" "}
-              <span className="bg-linear-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                scalable code
+              <span className="italic">Hi, I'm Gbenga Famusiwa.</span>
+              {/* <span className="bg-linear-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                Famusiwa Gbenga
               </span>{" "}
-              and seamless user experiences.
+              Dalight */}
             </h3>
 
             {/* Career Summary */}
-            <p className="text-gray-500 text-lg leading-relaxed max-w-xl text-justify">
-              I'm a passionate frontend developer with over {years} years of
+            <p className="text-gray-500 text-lg leading-relaxed max-w-xl">
+              I build modern, responsive, and scalable web applications using
+              React, TypeScript, and JavaScript. I enjoy transforming complex
+              requirements into intuitive, user-friendly digital experiences.
+              {/* I'm a passionate frontend developer with over {years} years of
               experience crafting digital products that make a difference. Over
               the years, I’ve focused on building responsive interfaces,
               collaborate with backend team, to deliver high-performance web
-              applications with modern technologies.
+              applications with modern technologies. */}
+            </p>
+            <p className="text-gray-500 text-lg leading-relaxed max-w-xl">
+              {years}+ Years of Experience • Frontend Developer @ ICMA
+              Professional Services
             </p>
           </div>
 
@@ -147,6 +154,19 @@ const Hero: React.FC = () => {
               <span>Download CV</span>
             </a>
           </motion.div>
+          <div className="flex text-indigo-700 gap-2 -mt-5">
+            <a href="https://github.com/famusiwa" target="blank">
+              GitHub
+            </a>
+            |{" "}
+            <a
+              href="https://www.linkedin.com/in/gbenga-famusiwa-7a5925194/"
+              target="blank"
+            >
+              {" "}
+              LinkedIn
+            </a>
+          </div>
         </motion.div>
         {/* RIGHT SIDE */}
         <div className="relative flex items-center justify-center">

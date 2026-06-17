@@ -13,8 +13,7 @@ const Footer: React.FC = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className=" bg-linear-to-l
-    from-indigo-50 via-purple-100 to-pink-50; dark:bg-gray-900 pt-10 sm:pt-10 mt-20 sm:mt-40 px-4 
+      className=" bg-white/60 backdrop-blur-md border-t border-white/20 dark:bg-gray-900 pt-10 sm:pt-10 mt-20 sm:mt-40 px-4 
     sm:px-10 lg:px-24 xl:px-24"
     >
       <div className="flex justify-between lg:items-center max-lg:flex-col gap-10">

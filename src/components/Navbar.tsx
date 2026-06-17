@@ -12,10 +12,10 @@ type NavProp = {
 const Navbar: React.FC<NavProp> = ({ theme }) => {
   const navLinks = [
     { label: "Home", to: "#hero" },
-    { label: "About Us", to: "#about-us" },
+    { label: "About Me", to: "#about-us" },
     // { label: "Services", to: "#services" },
-    { label: "Our Work", to: "#our-work" },
-    { label: "Contact Us", to: "#contact-us" },
+    { label: "Projects", to: "#our-work" },
+    { label: "Contact Me", to: "#contact-us" },
   ];
   const [sidebarOpen, setSidebarOpen] = useState<boolean>(false);
   return (
@@ -24,8 +24,8 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       className=" dark flex justify-between items-center px-4 sm:px-12 lg:px-24 xl:px-40 py-4
-    sticky top-0 z-20 backdrop-blur-xl font-medium bg-linear-to-l
-    from-indigo-50 via-purple-100 to-pink-50; dark:bg-gray-900/70 "
+    sticky top-0 z-20 font-medium bg-white/60 backdrop-blur-md border-b border-white/20
+    dark:bg-gray-900/70 "
     >
       <img
         src={theme === "dark" ? assets.logo_dark : assets.dalight}
@@ -36,7 +36,7 @@ const Navbar: React.FC<NavProp> = ({ theme }) => {
           <a
             key={index}
             href={link.to}
-            className="hover:border-b transition-all"
+            className="text-slate-900 hover:border-b hover:text-indigo-600 transition-all"
           >
             {link.label}
           </a>
