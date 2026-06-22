@@ -68,7 +68,7 @@ export const workData: Work[]= [
             title: "SelfService",
             description: "To generate optimum revenue for Delta State Government to enable it provide outstanding social services for the people",
             image: assets.selfservice,
-            link: "",
+            link: "https://selfservicepro.icmaservices.com/",
             tech: ["React","TypeScript", "Tailwind", "ASP.Net(C#)"],
            
         },
