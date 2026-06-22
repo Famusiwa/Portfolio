@@ -44,17 +44,9 @@ export const serviceData: Service[]= [
 
 export const workData: Work[]= [
 
+       
         {
             id: 1,
-            title: "GitHub Finder",
-            description: "Help to find different user on github with their repo",
-            image: assets.githubfinder,
-            link: "https://git-hub-finder-beta-gold.vercel.app/",
-            tech: ["React", "Tailwind", "TypeScript"],
-            
-        },
-        {
-            id: 2,
             title: "Fortune Housing",
             description: "We turn your vision of home into a reality, delivering results that move you.",
             image: assets.fortune_real_estate,
@@ -63,11 +55,20 @@ export const workData: Work[]= [
           
         },
         {
-            id: 3,
+            id: 2,
             title: "Revenue Payment",
             description: "This application is build to handle revenue payment of staff accross state",
             image: assets.revenuePayment,
             link: "https://payment.icmaservices.com/",
+            tech: ["React","TypeScript", "Tailwind", "ASP.Net(C#)"],
+           
+        },
+          {
+            id: 3,
+            title: "SelfService",
+            description: "To generate optimum revenue for Delta State Government to enable it provide outstanding social services for the people",
+            image: assets.selfservice,
+            link: "",
             tech: ["React","TypeScript", "Tailwind", "ASP.Net(C#)"],
            
         },

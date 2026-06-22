@@ -15,6 +15,7 @@ import work_fitness_app from './work_fitness_app.png'
 import work_dashboard_management from './work_dashboard_management.png'
 import fortune_real_estate from './fortune_real_estate.png'
 import email_icon from './email_icon.svg'
+import selfservice from './selfservicee.png'
 import ads_icon from './ads_icon.svg'
 import person_icon from './person_icon.svg'
 import facebook_icon from './facebook_icon.svg'
@@ -70,6 +71,7 @@ const assets = {
   githubfinder,
   revenuePayment,
   hotelMgt,
+  selfservice,
   email_icon,
   person_icon,
   facebook_icon,
