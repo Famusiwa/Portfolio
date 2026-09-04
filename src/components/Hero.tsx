@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
   //   </div>
   // );
 
-  const startYear = 2024;
+  const startYear = 2023;
   const years = new Date().getFullYear() - startYear;
 
   <p>{years} years</p>;
