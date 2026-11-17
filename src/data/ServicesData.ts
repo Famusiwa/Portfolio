@@ -47,11 +47,11 @@ export const workData: Work[]= [
        
         {
             id: 1,
-            title: "Fortune Housing",
-            description: "We turn your vision of home into a reality, delivering results that move you.",
-            image: assets.fortune_real_estate,
-            link: "https://fortune-housing.vercel.app/",
-            tech: ["React", "Tailwind", "Firebase", "TypeScript"],
+            title: "TaxSmart",
+            description: "A seamless end-to-end digital experience for accurate tax filing, real-time validation, and instant authorization.",
+            image: assets.taxSmart,
+            link: "https://applications.ogunstaterevenue.com/TaxSmartProWeb",
+            tech: ["React", "TypeScript", "Tailwind", "ASP.Net(C#)"],
           
         },
         {

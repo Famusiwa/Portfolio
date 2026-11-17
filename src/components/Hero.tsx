@@ -146,7 +146,7 @@ const Hero: React.FC = () => {
 
             {/* CV Button */}
             <a
-              href="/MyResume.pdf"
+              href="/MyResumevv.pdf"
               target="_blank"
               rel="noreferrer"
               className="group inline-flex items-center gap-2 bg-purple-400 hover:bg-indigo-600 px-3 py-2 rounded-xl font-medium transition-all duration-300 hover:-translate-y-1"

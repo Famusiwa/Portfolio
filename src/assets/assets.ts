@@ -38,6 +38,7 @@ import nextjs from './nextjs.svg'
 import Nodejs from './Nodejs.png'
 import Sqllogo from './Sqllogo.png'
 import revenuePayment from './revenuePayment.png'
+import taxSmart from './taxSmart.png'
 
 
 export const company_logos = [
@@ -83,7 +84,8 @@ const assets = {
   menu_icon_dark,
   sun_icon,
   moon_icon,
-  ads_icon
+  ads_icon,
+  taxSmart
 }
 
 export default assets

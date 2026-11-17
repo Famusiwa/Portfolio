@@ -82,7 +82,7 @@ const AboutUs: React.FC = () => {
                   <div>
                     <div className="flex justify-between text-sm mb-2">
                       <span className="text-gray-400">Tailwind CSS</span>
-                      <span className="text-gray-200">95%</span>
+                      <span className="text-gray-200">90%</span>
                     </div>
 
                     <div className="h-2 bg-white/5 rounded-full overflow-hidden">
@@ -91,7 +91,7 @@ const AboutUs: React.FC = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.2 }}
                         viewport={{ once: true }}
-                        className="h-full w-[95%] bg-linear-to-r from-indigo-500 to-purple-500 rounded-full"
+                        className="h-full w-[90%] bg-linear-to-r from-indigo-500 to-purple-500 rounded-full"
                       />
                     </div>
                   </div>
@@ -131,7 +131,7 @@ const AboutUs: React.FC = () => {
                   <div>
                     <div className="flex justify-between text-sm mb-2">
                       <span className="text-gray-400">React.Js</span>
-                      <span className="text-gray-200">88%</span>
+                      <span className="text-gray-200">90%</span>
                     </div>
 
                     <div className="h-2 bg-white/5 rounded-full overflow-hidden">
@@ -140,14 +140,14 @@ const AboutUs: React.FC = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.3 }}
                         viewport={{ once: true }}
-                        className="h-full w-[88%] bg-linear-to-r from-purple-500 to-indigo-500 rounded-full"
+                        className="h-full w-[90%] bg-linear-to-r from-purple-500 to-indigo-500 rounded-full"
                       />
                     </div>
                   </div>
                   <div>
                     <div className="flex justify-between text-sm mb-2">
                       <span className="text-gray-400">Next.js</span>
-                      <span className="text-gray-200">65%</span>
+                      <span className="text-gray-200">50%</span>
                     </div>
 
                     <div className="h-2 bg-white/5 rounded-full overflow-hidden">
@@ -156,7 +156,7 @@ const AboutUs: React.FC = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.6, delay: 0.6 }}
                         viewport={{ once: true }}
-                        className="h-full w-[65%] bg-linear-to-r from-pink-300 to-indigo-500 rounded-full"
+                        className="h-full w-[50%] bg-linear-to-r from-pink-300 to-indigo-500 rounded-full"
                       />
                     </div>
                   </div>

@@ -20,7 +20,7 @@ const TechToolKits: React.FC = () => {
     // "Prisma",
     // "Jest",
     // "Cypress",
-    "Figma",
+    // "Figma",
     "Git",
     "GitHub Actions",
   ];
